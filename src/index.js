@@ -17,7 +17,7 @@ let a = await fetch("./images")
 let t = await a.text()
 console.log(t)
 
-add("earth.jpg")
+add("earth.JPG")
 add("felt.png")
 add("happy_black_hole.png")
 add("shroom_plush.png")
