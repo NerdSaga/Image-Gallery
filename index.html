@@ -5,7 +5,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Familt Gallery</title>
 
         <style>
 
@@ -13,18 +13,67 @@
                 font-family: Arial, Helvetica, sans-serif;
             }
 
-            .gallery_image
-            {
+            body {
+                padding-top: 20px;
+                margin: 0px;
+            }
+
+            #header {
+                padding: 20px;
+            }
+
+            #header_image {
                 width: 100%;
             }
+
+            #gallery {
+                background-color: rgb(41, 41, 41);
+                padding-top: 20px;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
+            .gallery_image {
+                width: 100%;
+            }
+
+            .gallery_video {
+                width: 100%;
+            }
+
+            .gallery_text {
+                color: white;
+            }
+
         </style>
     </head>
 
     <body>
-        <h1>Hello</h1>
-        <p>Paragraph text goes here.</p>
-        <div id="gallery"></div>
-        <script src="src/index.js" type="module"></script>
+        
+
+        <div id="header">
+                <img src="images/header_icon.png" id="header_image">
+                <p>
+                    Certainty determine at of arranging perceived situation or. Or wholly pretty county in oppose.
+                    Favour met itself wanted settle put garret twenty. In astonished apartments resolution so an it. 
+                    Unsatiable on by contrasted to reasonable companions an. On otherwise no admitting to suspicion 
+                    furniture it.
+                </p>
+        </div>
+
+        <div id="gallery">
+            <h2 class="gallery_text">Baker Beach</h2>
+            <img src="images/looking_for_rocks.jpg" alt="" class="gallery_image">
+            <img src="images/thinking.jpg" alt="" class="gallery_image">
+            <img src="images/sand_castle.jpg" alt="" class="gallery_image">
+
+
+            <h2 class="gallery_text">Luffenholtz Beach</h2>
+            <img src="images/pretty_scene_1.jpg" alt="" class="gallery_image">
+            <video src="images/beachscape.mp4" type="video/mp4" class="gallery_video" controls>Your browser does not support playing this video.</video>
+
+        </div>
+
     </body>
 
 </html>
