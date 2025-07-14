@@ -8,13 +8,55 @@
         <title>Gallery</title>
 
         <style>
+            @media screen and (orientation: portrait) {
+                #gallery {
+                    padding-top: 20px;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                }
+
+                header {
+                    padding: 20px;
+                }
+
+                #header_image {
+                    width: 100%;
+                }
+            }
+
+            @media screen and (orientation: landscape) {
+                #gallery {
+                    padding-top: 20px;
+                    padding-left: 25%;
+                    padding-right: 25%;
+                }
+
+                header {
+                    padding-left: 20%;
+                    padding-right: 20%;
+                }
+
+                #header {
+                    display: flex;
+                    font-size: 20px;
+                }
+
+                #header_image {
+                    width: 35%;
+                    padding-right: 20px;
+                }
+
+                .gallery_text {
+                    font-size: 35px;
+                }
+            }
 
             h1, h2, h3, h4, h5, h6, p {
                 font-family: Arial, Helvetica, sans-serif;
             }
-
+            
             body {
-                padding-top: 20px;
+                padding: 0px;
                 margin: 0px;
             }
 
@@ -22,15 +64,8 @@
                 padding: 20px;
             }
 
-            #header_image {
-                width: 100%;
-            }
-
             #gallery {
                 background-color: rgb(41, 41, 41);
-                padding-top: 20px;
-                padding-left: 20px;
-                padding-right: 20px;
             }
 
             .gallery_image {
@@ -51,12 +86,12 @@
     <header>
         <div id="header">
                 <img src="images/header_icon.png" id="header_image">
-                <!-- <p>
-                    Certainty determine at of arranging perceived situation or. Or wholly pretty county in oppose.
+                <p>
+                    Letter to delegates here... Certainty determine at of arranging perceived situation or. Or wholly pretty county in oppose.
                     Favour met itself wanted settle put garret twenty. In astonished apartments resolution so an it. 
                     Unsatiable on by contrasted to reasonable companions an. On otherwise no admitting to suspicion 
                     furniture it.
-                </p> -->
+                </p>
         </div>
     </header>
 
@@ -72,6 +107,8 @@
             <img src="images/pretty_scene_1.jpg" alt="" class="gallery_image">
             <video src="images/beachscape.mp4" type="video/mp4" class="gallery_video" controls>Your browser does not support playing this video.</video>
 
+            <h2 class="gallery_text">Agate Beach</h2>
+            <video src="images/searchin_by_waves.mp4" controls style="width: 100%;"></video>
         </div>
 
     </body>
