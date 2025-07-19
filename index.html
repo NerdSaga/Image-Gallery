@@ -13,6 +13,7 @@
                     padding-top: 20px;
                     padding-left: 20px;
                     padding-right: 20px;
+                    padding-bottom: 100px;
                 }
 
                 header {
@@ -29,26 +30,31 @@
                     padding-top: 20px;
                     padding-left: 25%;
                     padding-right: 25%;
+                    padding-bottom: 0px;
                 }
 
                 header {
-                    padding-left: 20%;
-                    padding-right: 20%;
+                    padding-left: 10%;
+                    padding-right: 10%;
                 }
 
                 #header {
-                    display: flex;
+                    display: inline-flex;
                     font-size: 20px;
                 }
 
                 #header_image {
-                    width: 35%;
-                    padding-right: 20px;
+                    height: 3in;
+                    padding-right: 0.5in;
                 }
 
                 .gallery_text {
                     font-size: 35px;
                 }
+            }
+
+            #letter {
+                width: 5inpx;
             }
 
             h1, h2, h3, h4, h5, h6, p {
@@ -70,6 +76,7 @@
 
             .gallery_image {
                 width: 100%;
+                margin-bottom: 20px;
             }
 
             .gallery_video {
@@ -80,18 +87,59 @@
                 color: white;
             }
 
+            footer {
+                padding: 0px;
+                margin: 0px;
+            }
+
+            #footer_div {
+
+                background-image: url(images/bottling/footer.jpg);
+                background-size: cover;
+                background-color: rgba(0, 0, 0, 0.28);
+                background-blend-mode: multiply;
+                height: 2in;
+            }
+
+            #footer_text {
+                background: none;
+                color: white;
+                position: relative;
+                text-align: center;
+                top: 20%;
+                transform: translate(0%, 25%);
+                text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.70);
+                font-family: cursive;
+            }
+
         </style>
     </head>
 
     <header>
         <div id="header">
                 <img src="images/header_icon.png" id="header_image">
-                <p>
-                    Letter to delegates here... Certainty determine at of arranging perceived situation or. Or wholly pretty county in oppose.
-                    Favour met itself wanted settle put garret twenty. In astonished apartments resolution so an it. 
-                    Unsatiable on by contrasted to reasonable companions an. On otherwise no admitting to suspicion 
-                    furniture it.
+                <p id="letter">
+                    Dear Delegates, <br> <br>
+
+                    Welcome to California! We hope you enjoy our beautiful and diverse State.
+                    It has become even more beautiful now that you have come to visit! We realize
+                    that many of you may not have the opportunity to go up North to some of
+                    the amazing areas of “The Lost Coast” region so we wanted to bring a little
+                    of the coast to you. We had so much fun collecting these rocks! We visited
+                    three different beaches in Trinidad county California. Each little glass vile
+                    contains one Agate, a collection of Jasper, and red abalone shell. They were
+                    all hand picked just for you! <br><br>
+
+                    Here are some pictures of the areas we visited and our family. We love you
+                    so much and can’t wait to spend forever with you in Paradise! <br><br>
+
+                    Love The Sage Family, <br>
+                    Nathan, Melissa, Brennan and Jean Sage<br><br>
+
+                    PS: We would love to hear from you! Please email us at sac2025convemtion@gmail.com
                 </p>
+
+
         </div>
     </header>
 
@@ -110,7 +158,12 @@
             <h2 class="gallery_text">Agate Beach</h2>
             <video src="images/searchin_by_waves.mp4" controls style="width: 100%;"></video>
         </div>
-
     </body>
+
+    <footer style="background-color: black;">
+        <div id="footer_div">
+            <h1 id="footer_text">We Love You!</h1>
+        </div>
+    </footer>
 
 </html>
